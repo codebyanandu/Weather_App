@@ -52,19 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const SizedBox(height: 24),
 
-            /// Weather state
-            // Expanded(
-            //   child: Center(
-            //     child: weatherAsync.when(
-            //       data: (weather) => WeatherCard(weather: weather),
-            //       loading: () => const CircularProgressIndicator(),
-            //       error: (e, _) => Text(
-            //         "City not found",
-            //         style: TextStyle(color: Colors.red.shade400),
-            //       ),
-            //     ),
-            //   ),
-            // ),
+           
           ],
         ),
       ),
