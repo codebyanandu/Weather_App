@@ -8,8 +8,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-   final TextEditingController _controller = TextEditingController();
-  String _city = "London";
+  final TextEditingController _controller = TextEditingController();
+  String _city = "Kochi";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,22 +49,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],
             ),
-
             const SizedBox(height: 24),
 
-            /// Weather state
-            // Expanded(
-            //   child: Center(
-            //     child: weatherAsync.when(
-            //       data: (weather) => WeatherCard(weather: weather),
-            //       loading: () => const CircularProgressIndicator(),
-            //       error: (e, _) => Text(
-            //         "City not found",
-            //         style: TextStyle(color: Colors.red.shade400),
-            //       ),
-            //     ),
-            //   ),
-            // ),
+            Card(
+              shape: Border.all(color: Colors.black),
+              child: Column(
+                children: [
+                  Text(
+                    'Kochi',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
