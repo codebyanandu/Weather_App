@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:weather_app/app/utils/colors.dart';
 import 'package:weather_app/screens/home.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
-
-  static const primaryColor = Color(0xFF3A49F9);
 
   Future<void> _finish(BuildContext context) async {
     final prefs = await SharedPreferences.getInstance();
@@ -20,7 +19,7 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: AColors.primaryClr,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),
@@ -62,7 +61,7 @@ class OnboardingScreen extends StatelessWidget {
                   onPressed: () => _finish(context),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
-                    foregroundColor: primaryColor,
+                    foregroundColor: AColors.primaryClr,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
