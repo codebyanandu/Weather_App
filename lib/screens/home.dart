@@ -198,35 +198,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
 
-  /// WEATHER DETAIL WIDGET
-  Widget weatherDetail(String title,String value,IconData icon){
-    return Expanded(
-      child: Container(
-        padding: const EdgeInsets.all(12),
-        margin: const EdgeInsets.symmetric(horizontal: 4),
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.2),
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: Column(
-          children: [
-            Icon(icon,color: Colors.white),
-            const SizedBox(height: 5),
-            Text(
-              value,
-              style: const TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            
-            Text(
-              title,
-              style: const TextStyle(
-                color: Colors.white70,
-                fontSize: 12,
-              ),
-            ),
+            const SizedBox(height: 24),
+
+           
           ],
         ),
       ),
