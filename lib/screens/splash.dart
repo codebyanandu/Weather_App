@@ -18,9 +18,14 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     // Timer to navigate to LoginPage after 5 seconds
     Timer(Duration(seconds: 5), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-        return OnboardingScreen();
-      }));
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return OnboardingScreen();
+          },
+        ),
+      );
     });
   }
 
@@ -35,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
             color: AColors.white,
             fontSize: 22,
             fontWeight: FontWeight.bold,
-            fontFamily: 'monospace'
+            fontFamily: 'monospace',
           ),
         ),
       ),

@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: AColors.white,
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: TextField(
@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       currentCity,
                       style: const TextStyle(
                         fontSize: 26,
-                        color: Colors.white,
+                        color: AColors.white,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -103,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     const Icon(
                       Icons.wb_sunny,
                       size: 60,
-                      color: Colors.yellow,
+                      color: AColors.yellow,
                     ),
                     const SizedBox(height: 10),
 
@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       currentTemp,
                       style: const TextStyle(
                         fontSize: 40,
-                        color: Colors.white,
+                        color: AColors.white,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -147,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   "Saved Cities",
                   style: TextStyle(
                     fontSize: 18,
-                    color: Colors.white,
+                    color: AColors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -163,13 +163,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     return Container(
                       margin: const EdgeInsets.only(bottom: 10),
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: AColors.white,
                         borderRadius: BorderRadius.circular(15),
                       ),
                       child: ListTile(
                         leading: const Icon(
                           Icons.location_city,
-                          color: Colors.blue,
+                          color: AColors.blue,
                         ),
                         title: Text(
                           city["city"]!,
@@ -182,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
-                            color: Colors.blue,
+                            color: AColors.blue,
                           ),
                         ),
                       ),
@@ -210,12 +210,12 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         child: Column(
           children: [
-            Icon(icon,color: Colors.white),
+            Icon(icon,color: AColors.white),
             const SizedBox(height: 5),
             Text(
               value,
               style: const TextStyle(
-                color: Colors.white,
+                color: AColors.white,
                 fontWeight: FontWeight.bold,
               ),
             ),

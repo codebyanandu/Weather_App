@@ -31,7 +31,7 @@ class OnboardingScreen extends StatelessWidget {
               /// Center content
               Column(
                 children: const [
-                  Icon(Icons.cloud, size: 100, color: Colors.white),
+                  Icon(Icons.cloud, size: 100, color: AColors.white),
                   SizedBox(height: 24),
                   Text(
                     "Welcome to Weather App",
@@ -60,7 +60,7 @@ class OnboardingScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () => _finish(context),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
+                    backgroundColor: AColors.white,
                     foregroundColor: AColors.primaryClr,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
