@@ -16,7 +16,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Timer to navigate to LoginPage after 5 seconds
     Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,

@@ -13,14 +13,14 @@ class ForecastScreen extends StatelessWidget {
         children: [
 
           /// BACKGROUND
-          Container(
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/weather_bg.jpg"),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
+          // Container(
+          //   decoration: const BoxDecoration(
+          //     image: DecorationImage(
+          //       image: AssetImage("assets/images/weather_bg.jpg"),
+          //       fit: BoxFit.cover,
+          //     ),
+          //   ),
+          // ),
 
           /// OVERLAY
           Container(

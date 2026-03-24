@@ -31,12 +31,9 @@ class _MainScreenState extends State<MainScreen> {
           setState(() => _index = i);
         },
         items: const [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.location_city), label: "Cities"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_today), label: "Forecast"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.location_city), label: "Cities"),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: "Forecast"),
         ],
       ),
     );
