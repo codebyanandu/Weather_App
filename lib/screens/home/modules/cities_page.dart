@@ -10,7 +10,7 @@ class CitiesScreen extends StatefulWidget {
 
 class _CitiesScreenState extends State<CitiesScreen> {
 
-  TextEditingController _searchController = TextEditingController();
+  final TextEditingController _searchController = TextEditingController();
 
   List<String> cities = [
     "Kochi",
