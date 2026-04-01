@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/screens/home/modules/cities_page.dart';
 import 'package:weather_app/screens/home/modules/forecast.dart';
 import 'package:weather_app/screens/home/modules/home_page.dart';
+import 'package:weather_app/screens/home/modules/cities_page.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

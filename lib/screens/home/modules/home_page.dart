@@ -124,13 +124,11 @@ class HomeScreen extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                          child:
-                              _infoCard("Humidity", "75%", Icons.water_drop)),
+                      child: _infoCard("Humidity", "75%", Icons.water_drop)),
                       const SizedBox(width: 10),
                       Expanded(child: _infoCard("Wind", "8 km/h", Icons.air)),
                       const SizedBox(width: 10),
-                      Expanded(
-                          child: _infoCard("Pressure", "1012", Icons.speed)),
+                      Expanded(child: _infoCard("Pressure", "1012", Icons.speed)),
                     ],
                   ),
 
