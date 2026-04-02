@@ -9,5 +9,4 @@ A clean and simple Flutter Weather App that fetches real‑time weather data usi
 - 🌡️ Displays temperature, humidity, wind speed, and weather condition  
 - 🎯 Clean and minimal UI design
 
-## Requirements
   
