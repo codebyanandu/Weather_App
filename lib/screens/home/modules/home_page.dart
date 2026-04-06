@@ -62,9 +62,12 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         /// 📍 CITY
                         Row(
-                          children:  [
-                            Icon(Icons.location_on,
-                                color: Colors.white70, size: 16),
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              color: Colors.white70,
+                              size: 16,
+                            ),
                             SizedBox(width: 5),
                             Text(
                               city,
