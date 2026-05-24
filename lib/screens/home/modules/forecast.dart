@@ -29,13 +29,13 @@ class ForecastScreen extends StatelessWidget {
 
   /// 🌤 Dummy weather data (replace later with API)
   final List<Map<String, dynamic>> forecastData = const [
-    {"tempMax": 30, "tempMin": 24, "condition": "Sunny"},
-    {"tempMax": 29, "tempMin": 23, "condition": "Cloudy"},
-    {"tempMax": 28, "tempMin": 22, "condition": "Rain"},
+    {"tempMax": 30, "tempMin": 25, "condition": "Thunderstorm"},
+    {"tempMax": 29, "tempMin": 24, "condition": "Heavy Rain"},
+    {"tempMax": 28, "tempMin": 24, "condition": "Cloudy"},
     {"tempMax": 31, "tempMin": 25, "condition": "Sunny"},
-    {"tempMax": 30, "tempMin": 24, "condition": "Cloudy"},
-    {"tempMax": 27, "tempMin": 22, "condition": "Rain"},
-    {"tempMax": 29, "tempMin": 23, "condition": "Sunny"},
+    {"tempMax": 30, "tempMin": 25, "condition": "Rain Showers"},
+    {"tempMax": 29, "tempMin": 24, "condition": "Windy"},
+    {"tempMax": 28, "tempMin": 23, "condition": "Rainy"},
   ];
 
   /// 🎨 Get icon based on condition
@@ -47,6 +47,28 @@ class ForecastScreen extends StatelessWidget {
         return Icons.cloud;
       case "Rain":
         return Icons.grain;
+      case "Rainy":
+        return Icons.grain;
+      case "Rain Showers":
+        return Icons.water_drop;
+      case "Heavy Rain":
+        return Icons.thunderstorm;
+      case "Thunderstorm":
+        return Icons.thunderstorm;
+      case "Windy":
+        return Icons.air;
+      case "Drizzle":
+        return Icons.umbrella;
+      case "Foggy":
+        return Icons.foggy;
+      case "Haze":
+        return Icons.blur_on;
+      case "Partly Cloudy":
+        return Icons.cloud_queue;
+      case "Clear":
+        return Icons.wb_sunny_outlined;
+      case "Cold":
+        return Icons.ac_unit;
       default:
         return Icons.wb_sunny;
     }
@@ -56,7 +78,6 @@ class ForecastScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F7FB),
-
       appBar: AppBar(
         title: const Text(
           "7-Day Forecast",
@@ -66,7 +87,6 @@ class ForecastScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
         elevation: 0,
       ),
-
       body: ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: forecastData.length,
@@ -94,10 +114,8 @@ class ForecastScreen extends StatelessWidget {
                   )
                 ],
               ),
-
               child: Row(
                 children: [
-
                   /// 🌤 ICON
                   Container(
                     padding: const EdgeInsets.all(10),
@@ -123,9 +141,7 @@ class ForecastScreen extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
-                            color: isToday
-                                ? AColors.primaryClr
-                                : Colors.black,
+                            color: isToday ? AColors.primaryClr : Colors.black,
                           ),
                         ),
                         const SizedBox(height: 4),
