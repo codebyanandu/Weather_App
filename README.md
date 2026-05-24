@@ -10,6 +10,9 @@ A clean and simple Flutter Weather App that fetches real‑time weather data usi
 - 🎯 Clean and minimal UI design
 
 ## Screenshots
-  
+
+|                 Home Screen                  |                 Cities Screen                |               Forecast Screen                |
+|:--------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|
+|<img src="ui/home.png" width="300" />         | <img src="ui/cities.png" width="300"/>       | <img src="ui/forecast.png" width="300"/>     |
 
   
