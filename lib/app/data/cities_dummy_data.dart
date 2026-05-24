@@ -4,15 +4,135 @@ List<CityWeatherModel> citiesWeatherData = [
   CityWeatherModel(
     city: "Kochi",
     state: "Kerala",
-    weather: "Rainy",
-    temperature: 28,
-    humidity: 82,
-    airQuality: 42,
-    weatherIcon: "🌧️",
-    time: "10:30 AM",
-    windSpeed: 14.2,
+    weather: "Thunderstorms",
+    temperature: 29,
+    humidity: 78,
+    airQuality: 44,
+    weatherIcon: "⛈️",
+    time: "11:00 AM",
+    windSpeed: 17.3,
   ),
-
+  CityWeatherModel(
+    city: "Thiruvananthapuram",
+    state: "Kerala",
+    weather: "Heavy Rain",
+    temperature: 27,
+    humidity: 85,
+    airQuality: 40,
+    weatherIcon: "🌧️",
+    time: "11:00 AM",
+    windSpeed: 7.9,
+  ),
+  CityWeatherModel(
+    city: "Kozhikode",
+    state: "Kerala",
+    weather: "Cloudy",
+    temperature: 28,
+    humidity: 80,
+    airQuality: 46,
+    weatherIcon: "☁️",
+    time: "11:00 AM",
+    windSpeed: 13.2,
+  ),
+  CityWeatherModel(
+    city: "Thrissur",
+    state: "Kerala",
+    weather: "Rainy",
+    temperature: 27,
+    humidity: 83,
+    airQuality: 41,
+    weatherIcon: "🌦️",
+    time: "11:00 AM",
+    windSpeed: 12.4,
+  ),
+  CityWeatherModel(
+    city: "Kannur",
+    state: "Kerala",
+    weather: "Windy",
+    temperature: 29,
+    humidity: 74,
+    airQuality: 38,
+    weatherIcon: "🌬️",
+    time: "11:00 AM",
+    windSpeed: 19.5,
+  ),
+  CityWeatherModel(
+    city: "Alappuzha",
+    state: "Kerala",
+    weather: "Rain Showers",
+    temperature: 28,
+    humidity: 86,
+    airQuality: 36,
+    weatherIcon: "🌧️",
+    time: "11:00 AM",
+    windSpeed: 11.2,
+  ),
+  CityWeatherModel(
+    city: "Kottayam",
+    state: "Kerala",
+    weather: "Drizzle",
+    temperature: 26,
+    humidity: 88,
+    airQuality: 35,
+    weatherIcon: "🌦️",
+    time: "11:00 AM",
+    windSpeed: 9.6,
+  ),
+  CityWeatherModel(
+    city: "Palakkad",
+    state: "Kerala",
+    weather: "Sunny",
+    temperature: 33,
+    humidity: 58,
+    airQuality: 52,
+    weatherIcon: "☀️",
+    time: "11:00 AM",
+    windSpeed: 14.8,
+  ),
+  CityWeatherModel(
+    city: "Wayanad",
+    state: "Kerala",
+    weather: "Foggy",
+    temperature: 22,
+    humidity: 90,
+    airQuality: 28,
+    weatherIcon: "🌫️",
+    time: "11:00 AM",
+    windSpeed: 6.3,
+  ),
+  CityWeatherModel(
+    city: "Idukki",
+    state: "Kerala",
+    weather: "Cold",
+    temperature: 20,
+    humidity: 84,
+    airQuality: 25,
+    weatherIcon: "❄️",
+    time: "11:00 AM",
+    windSpeed: 5.7,
+  ),
+  CityWeatherModel(
+    city: "Kasaragod",
+    state: "Kerala",
+    weather: "Rainy",
+    temperature: 27,
+    humidity: 82,
+    airQuality: 39,
+    weatherIcon: "🌧️",
+    time: "11:00 AM",
+    windSpeed: 15.4,
+  ),
+  CityWeatherModel(
+    city: "Malappuram",
+    state: "Kerala",
+    weather: "Partly Cloudy",
+    temperature: 30,
+    humidity: 72,
+    airQuality: 48,
+    weatherIcon: "⛅",
+    time: "11:00 AM",
+    windSpeed: 10.1,
+  ),
   CityWeatherModel(
     city: "Bangalore",
     state: "Karnataka",
@@ -24,7 +144,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 10.5,
   ),
-
   CityWeatherModel(
     city: "Mumbai",
     state: "Maharashtra",
@@ -36,7 +155,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 18.1,
   ),
-
   CityWeatherModel(
     city: "Delhi",
     state: "Delhi",
@@ -48,7 +166,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 8.4,
   ),
-
   CityWeatherModel(
     city: "Chennai",
     state: "Tamil Nadu",
@@ -60,7 +177,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 15.0,
   ),
-
   CityWeatherModel(
     city: "Hyderabad",
     state: "Telangana",
@@ -72,7 +188,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 11.6,
   ),
-
   CityWeatherModel(
     city: "Pune",
     state: "Maharashtra",
@@ -84,7 +199,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 20.2,
   ),
-
   CityWeatherModel(
     city: "Kolkata",
     state: "West Bengal",
@@ -96,7 +210,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 17.5,
   ),
-
   CityWeatherModel(
     city: "Ahmedabad",
     state: "Gujarat",
@@ -108,7 +221,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 9.8,
   ),
-
   CityWeatherModel(
     city: "Jaipur",
     state: "Rajasthan",
@@ -120,19 +232,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 13.7,
   ),
-
-  CityWeatherModel(
-    city: "Thiruvananthapuram",
-    state: "Kerala",
-    weather: "Rainy",
-    temperature: 27,
-    humidity: 85,
-    airQuality: 40,
-    weatherIcon: "🌧️",
-    time: "10:30 AM",
-    windSpeed: 12.9,
-  ),
-
   CityWeatherModel(
     city: "Goa",
     state: "Goa",
@@ -144,7 +243,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 19.4,
   ),
-
   CityWeatherModel(
     city: "Mysore",
     state: "Karnataka",
@@ -156,7 +254,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 9.3,
   ),
-
   CityWeatherModel(
     city: "Shimla",
     state: "Himachal Pradesh",
@@ -168,7 +265,6 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 6.7,
   ),
-
   CityWeatherModel(
     city: "Srinagar",
     state: "Jammu & Kashmir",
@@ -180,5 +276,4 @@ List<CityWeatherModel> citiesWeatherData = [
     time: "10:30 AM",
     windSpeed: 5.4,
   ),
-
 ];

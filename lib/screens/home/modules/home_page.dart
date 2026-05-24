@@ -100,7 +100,7 @@ class HomeScreen extends StatelessWidget {
                                 shape: BoxShape.circle,
                               ),
                               child: const Icon(
-                                Icons.wb_sunny,
+                                Icons.thunderstorm,
                                 size: 40,
                                 color: Colors.yellow,
                               ),
@@ -111,7 +111,7 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(height: 10),
 
                         const Text(
-                          "Cloudy",
+                          "Thunderstorms",
                           style: TextStyle(
                             color: Colors.white70,
                             fontSize: 18,
