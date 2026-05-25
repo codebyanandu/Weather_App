@@ -83,6 +83,7 @@ class ForecastScreen extends StatelessWidget {
           "7-Day Forecast",
           style: TextStyle(color: Colors.white),
         ),
+        centerTitle: true,
         backgroundColor: AColors.primaryClr,
         iconTheme: const IconThemeData(color: Colors.white),
         elevation: 0,
