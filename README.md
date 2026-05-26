@@ -6,7 +6,7 @@ A clean and simple Flutter Weather App that fetches real‑time weather data usi
 - 🌍 Real-time weather data using public API  
 - 🔎 Search weather by city name  
 - 📍 Get weather for current location  
-- 🌡️ Displays temperature, humidity, wind speed, and weather condition  
+- 🌡️ Displays temperature, humidity, wind speed, and Air Quality
 - 🎯 Clean and minimal UI design
 
 ## Screenshots
