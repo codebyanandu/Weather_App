@@ -1,6 +1,6 @@
 # Weather App
 
-A clean and simple Flutter Weather App that fetches real‑time weather data using public APIs. Built with state management, featuring city search, forecast details and current weather updates.
+A clean and simple Flutter Weather App that fetches real‑time weather data using public APIs. Built with state management, featuring city search, forecast details and current weather updates.It also provides offline support
 
 ## Features
 - 🌍 Real-time weather data using public API  
