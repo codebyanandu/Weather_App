@@ -14,130 +14,129 @@ class SyncBottomSheet extends StatelessWidget {
         ),
       ),
       child: SingleChildScrollView(
-  child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-
-          /// TOP HANDLE
-          Container(
-            width: 50,
-            height: 5,
-            decoration: BoxDecoration(
-              color: Colors.white24,
-              borderRadius: BorderRadius.circular(10),
-            ),
-          ),
-
-          const SizedBox(height: 20),
-
-          /// TITLE
-          const Row(
-            children: [
-              Icon(Icons.sync, color: Colors.white),
-              SizedBox(width: 10),
-              Text(
-                "Sync Settings",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            /// TOP HANDLE
+            Container(
+              width: 50,
+              height: 5,
+              decoration: BoxDecoration(
+                color: Colors.white24,
+                borderRadius: BorderRadius.circular(10),
               ),
-            ],
-          ),
-
-          const SizedBox(height: 25),
-
-          /// ONLINE STATUS
-          Container(
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.08),
-              borderRadius: BorderRadius.circular(18),
             ),
-            child: const Row(
+
+            const SizedBox(height: 20),
+
+            /// TITLE
+            const Row(
               children: [
-                CircleAvatar(
-                  radius: 6,
-                  backgroundColor: Colors.green,
-                ),
-                SizedBox(width: 12),
+                Icon(Icons.sync, color: Colors.white),
+                SizedBox(width: 10),
                 Text(
-                  "Online",
+                  "Sync Settings",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 16,
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                Spacer(),
-                Text(
-                  "Last sync 10:45 AM",
-                  style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 12,
-                  ),
-                )
               ],
             ),
-          ),
 
-          const SizedBox(height: 25),
+            const SizedBox(height: 25),
 
-          /// OPTIONS
-          _tile(
-            title: "Auto Sync",
-            icon: Icons.cloud_sync,
-            value: true,
-          ),
+            /// ONLINE STATUS
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.08),
+                borderRadius: BorderRadius.circular(18),
+              ),
+              child: const Row(
+                children: [
+                  CircleAvatar(
+                    radius: 6,
+                    backgroundColor: Colors.green,
+                  ),
+                  SizedBox(width: 12),
+                  Text(
+                    "Online",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
+                  ),
+                  Spacer(),
+                  Text(
+                    "Last sync 10:45 AM",
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 12,
+                    ),
+                  )
+                ],
+              ),
+            ),
 
-          _tile(
-            title: "WiFi Only",
-            icon: Icons.wifi,
-            value: false,
-          ),
+            const SizedBox(height: 25),
 
-          _tile(
-            title: "Offline Cache",
-            icon: Icons.storage,
-            value: true,
-          ),
+            /// OPTIONS
+            _tile(
+              title: "Auto Sync",
+              icon: Icons.cloud_sync,
+              value: true,
+            ),
 
-          const SizedBox(height: 25),
+            _tile(
+              title: "WiFi Only",
+              icon: Icons.wifi,
+              value: false,
+            ),
 
-          /// SYNC BUTTON
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton.icon(
-              onPressed: () {},
-              icon: const Icon(Icons.sync),
-              label: const Text("Sync Now"),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                foregroundColor: const Color(0xFF3A49F9),
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18),
+            _tile(
+              title: "Offline Cache",
+              icon: Icons.storage,
+              value: true,
+            ),
+
+            const SizedBox(height: 25),
+
+            /// SYNC BUTTON
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                onPressed: () {},
+                icon: const Icon(Icons.sync),
+                label: const Text("Sync Now"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: const Color(0xFF3A49F9),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18),
+                  ),
                 ),
               ),
             ),
-          ),
 
-          const SizedBox(height: 12),
+            const SizedBox(height: 12),
 
-          /// CLEAR CACHE
-          TextButton.icon(
-            onPressed: () {},
-            icon: const Icon(Icons.delete_outline, color: Colors.redAccent),
-            label: const Text(
-              "Clear Cached Data",
-              style: TextStyle(color: Colors.redAccent),
+            /// CLEAR CACHE
+            TextButton.icon(
+              onPressed: () {},
+              icon: const Icon(Icons.delete_outline, color: Colors.redAccent),
+              label: const Text(
+                "Clear Cached Data",
+                style: TextStyle(color: Colors.redAccent),
+              ),
             ),
-          ),
 
-          const SizedBox(height: 10),
-        ],
-      ),),
-      
+            const SizedBox(height: 10),
+          ],
+        ),
+      ),
     );
   }
 
