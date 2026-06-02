@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../Widgets/custom_model_sheet.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -40,7 +42,21 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      const Icon(Icons.menu, color: Colors.white),
+                      // const Icon(Icons.menu, color: Colors.white),
+                      GestureDetector(
+                        onTap: () {
+                          showModalBottomSheet(
+                            context: context,
+                            isScrollControlled: true,
+                            backgroundColor: Colors.transparent,
+                            builder: (context) => const SyncBottomSheet(),
+                          );
+                        },
+                        child: const Icon(
+                          Icons.sync,
+                          color: Colors.white,
+                        ),
+                      ),
                     ],
                   ),
 
@@ -127,11 +143,13 @@ class HomeScreen extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                      child: _infoCard("Humidity", "75%", Icons.water_drop)),
+                          child:
+                              _infoCard("Humidity", "75%", Icons.water_drop)),
                       const SizedBox(width: 10),
                       Expanded(child: _infoCard("Wind", "8 km/h", Icons.air)),
                       const SizedBox(width: 10),
-                      Expanded(child: _infoCard("Pressure", "1012", Icons.speed)),
+                      Expanded(
+                          child: _infoCard("Pressure", "1012", Icons.speed)),
                     ],
                   ),
 
