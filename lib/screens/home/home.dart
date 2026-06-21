@@ -28,15 +28,19 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: Container(
          margin: const EdgeInsets.fromLTRB(20, 0, 20, 20),
         height: 70,
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.15),
-          borderRadius: BorderRadius.circular(25),
-          border: Border.all(
-            color: Colors.white.withOpacity(0.2),
-          ),
+      decoration: BoxDecoration(
+      color: const Color(0xFF4F7FF7),
+      borderRadius: BorderRadius.circular(35),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.black.withOpacity(0.15),
+          blurRadius: 20,
+          offset: const Offset(0, 8),
         ),
+      ],
+    ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             _buildNavItem(Icons.home_rounded, "Home", 0),
             _buildNavItem(Icons.location_city_rounded, "Cities", 1),
